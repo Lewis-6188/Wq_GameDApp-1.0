@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.game.wanq.uu.view.whget.MyScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:background="@color/colorPrimaryBS"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/title_logincgxq"
+                layout="@layout/wanq_title_bar" />
+
+            <LinearLayout
+                android:id="@+id/weidl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/grentx_tabplimage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="@dimen/m2Ten"
+                    android:src="@mipmap/morentoux"
+                    app:civ_border_color="@color/colorPrimaryTM"
+                    app:civ_border_width="1dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/userid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mTen"
+                    android:text="ID:0"
+                    android:textColor="@color/colorPrimaryTXTHse"
+                    android:textSize="@dimen/homeoneitemUserTextSize" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mW"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="@dimen/mTen">
+
+                        <TextView
+                            android:id="@+id/fensinum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="粉丝"
+                            android:textColor="@color/colorPrimaryHS"
+                            android:textSize="@dimen/homeoneitemTextSizeSS" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="@dimen/mTen">
+
+                        <TextView
+                            android:id="@+id/guanzhunum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="关注"
+                            android:textColor="@color/colorPrimaryHS"
+                            android:textSize="@dimen/homeoneitemTextSizeSS" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/usernamems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/m2Ten"
+                    android:text="“Hello  Gamer!”"
+                    android:textColor="@color/colorPrimaryTXTHse"
+                    android:textSize="@dimen/homeoneitemTextSizeSS" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/m2Ten"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/gerendianz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@mipmap/zan"
+                            android:paddingLeft="@dimen/m2Ten"
+                            android:text="   0"
+                            android:textColor="@color/colorPrimaryTXTHse"
+                            android:textSize="@dimen/homeoneitemUserTextSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="@dimen/m2Ten">
+
+
+                        <ImageView
+                            android:id="@+id/sqfqi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/mW"
+                            android:background="@mipmap/sqedu" />
+
+
+                        <ImageView
+                            android:id="@+id/grenXGZL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/mW"
+                            android:background="@drawable/logincgbtn_xuanzd" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginLeft="@dimen/mTen"
+                    android:layout_marginRight="@dimen/mTen"
+                    android:layout_marginTop="@dimen/mTen"
+                    android:background="@color/colorPrimaryTXTHse" />
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/logincg_tad"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bmenu_h"
+                    app:tabIndicatorColor="@color/colorPrimaryDark"
+                    app:tabSelectedTextColor="@color/colorPrimaryDark"
+                    app:tabTextColor="@color/colorPrimaryHS" />
+
+                <com.game.wanq.uu.view.whget.CustomViewPager
+                    android:id="@+id/logincg_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryBS" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.game.wanq.uu.view.whget.MyScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryBS"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/grenShezhi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:textSize="@dimen/homeoneitemUserTextSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="10dp"
+            android:background="@color/colorPrimarydHse" />
+
+        <LinearLayout
+            android:id="@+id/grenZhangdan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账单"
+                android:textSize="@dimen/homeoneitemUserTextSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="10dp"
+            android:background="@color/colorPrimarydHse" />
+
+        <LinearLayout
+            android:id="@+id/grenDhuan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="兑换"
+                android:textSize="@dimen/homeoneitemUserTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

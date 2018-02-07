@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimarySHse"
+    android:gravity="center"
+    android:padding="@dimen/mW">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapejj_background"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="@dimen/mW">
+
+        <ImageView
+            android:id="@+id/id_index_game_gallery_item_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/csbitmap" />
+
+        <TextView
+            android:id="@+id/yxxname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mTen"
+            android:text="战车少女出击"
+            android:textColor="@color/colorPrimaryHS"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mTen"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left">
+
+                <TextView
+                    android:id="@+id/yxleixing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="角色扮演"
+                    android:textColor="@color/colorPrimaryTXTHse" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right">
+
+                <TextView
+                    android:id="@+id/yxpingfen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/mTen"
+                    android:text="8.3"
+                    android:textColor="@color/colorPrimaryTXTHse" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/star1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

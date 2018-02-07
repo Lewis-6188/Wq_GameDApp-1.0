@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_faxian"
+        layout="@layout/wanq_title_bar" />
+
+    <com.game.wanq.uu.view.whget.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/mW">
+
+            <com.game.wanq.uu.view.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+
+            <com.game.wanq.uu.view.whget.FxHorizontalScrollView
+                android:id="@+id/id_fxhorizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/colorPrimaryBS"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/id_gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal" />
+            </com.game.wanq.uu.view.whget.FxHorizontalScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimarySHse" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fxrecyclerView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorPrimaryBS"
+                android:gravity="center_vertical"
+                android:scrollbars="vertical" />
+            <!--com.game.wanq.uu.view.whget.MyRecyclerView-->
+        </LinearLayout>
+    </com.game.wanq.uu.view.whget.MyScrollView>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryHse">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/mW"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryBS"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/mTen">
+
+            <ImageView
+                android:id="@+id/shoucimage1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+                android:background="@mipmap/csbitmap"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/shoucganmename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/mTen"
+                android:paddingRight="@dimen/mTen"
+                android:paddingTop="@dimen/mW"
+                android:text="刀塔传奇"
+                android:textColor="@color/colorPrimaryHS"
+                android:textSize="@dimen/homeoneitemUserTextSize"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/mW"
+                android:background="@color/colorPrimaryTXTHse" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/mTen"
+                android:paddingRight="@dimen/mTen"
+                android:paddingTop="@dimen/mW">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.game.wanq.uu.view.whget.RatingBarView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/shoucpfen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:starCount="5"
+                        app:starDistance="2dp"
+                        app:starEmpty="@mipmap/star1"
+                        app:starFill="@mipmap/star2"
+                        app:starSize="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/shoucpfnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/mW"
+                        android:text="0"
+                        android:textColor="@color/colorPrimaryHS"
+                        android:textSize="@dimen/hobanTextSize"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+

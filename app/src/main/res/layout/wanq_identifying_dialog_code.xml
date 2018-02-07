@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/mTen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/mW">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请输入短信验证码" />
+        </LinearLayout>
+
+
+        <com.tuo.customview.VerificationCodeView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/icv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="26dp"
+            app:icv_et_bg_focus="@drawable/shape_icv_et_bg_focus"
+            app:icv_et_bg_normal="@drawable/shape_icv_et_bg_normal"
+            app:icv_et_divider_drawable="@drawable/shape_divider_identifying"
+            app:icv_et_number="6"
+            app:icv_et_text_color="@color/colorPrimaryTXTHse"
+            app:icv_et_width="40dp" />
+
+        <LinearLayout
+            android:id="@+id/yzmcwu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mW"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验证码错误"
+                android:textColor="@color/gleus"
+                android:textSize="@dimen/homeoneitemUserTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mTen"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="短信验证码已发送至"
+                android:textColor="@color/colorPrimaryTXTHse"
+                android:textSize="@dimen/homeoneitemUserTextSize" />
+
+            <TextView
+                android:id="@+id/showPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+8613110111112"
+                android:textColor="@color/colorPrimaryTXTHse"
+                android:textSize="@dimen/homeoneitemUserTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/mTen">
+
+            <TextView
+                android:id="@+id/timeCXfsong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重新发送"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/homeoneitemUserTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/clossyzm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="@dimen/mW"
+        android:paddingTop="@dimen/mW"
+        android:src="@mipmap/cha" />
+
+</RelativeLayout>

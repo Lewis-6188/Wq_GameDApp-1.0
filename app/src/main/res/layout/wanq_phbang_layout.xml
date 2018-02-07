@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_phbang"
+        layout="@layout/wanq_title_bar" />
+
+    <com.game.wanq.uu.view.whget.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/lintenss"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.game.wanq.uu.view.whget.PhHorizontalScrollView
+                android:id="@+id/phHorizontalView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimarydHse"
+                android:paddingBottom="@dimen/mW"
+                android:paddingTop="@dimen/mW"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/id_gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal" />
+            </com.game.wanq.uu.view.whget.PhHorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/mTen">
+
+                <TextView
+                    android:id="@+id/xiazaibang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/mTen"
+                    android:paddingRight="@dimen/mTen"
+                    android:text="下载榜"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/homeoneitemTextSizeSS" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="@dimen/mTen"
+                    android:layout_margin="@dimen/mW"
+                    android:background="@color/colorPrimaryTXTHse" />
+
+                <TextView
+                    android:id="@+id/xinzengbang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/mTen"
+                    android:paddingRight="@dimen/mTen"
+                    android:text="新增榜"
+                    android:textColor="@color/colorPrimaryTXTHse"
+                    android:textSize="@dimen/homeoneitemTextSizeSS" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="@dimen/mTen"
+                    android:layout_margin="@dimen/mW"
+                    android:background="@color/colorPrimaryTXTHse" />
+
+
+                <TextView
+                    android:id="@+id/rewanbang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/mTen"
+                    android:paddingRight="@dimen/mTen"
+                    android:text="热玩榜"
+                    android:textColor="@color/colorPrimaryTXTHse"
+                    android:textSize="@dimen/homeoneitemTextSizeSS" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="@dimen/mTen"
+                    android:layout_margin="@dimen/mW"
+                    android:background="@color/colorPrimaryTXTHse" />
+
+
+                <TextView
+                    android:id="@+id/yuyuebang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/mTen"
+                    android:paddingRight="@dimen/mTen"
+                    android:text="预约榜"
+                    android:textColor="@color/colorPrimaryTXTHse"
+                    android:textSize="@dimen/homeoneitemTextSizeSS" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryTXTHse" />
+
+            <com.game.wanq.uu.view.whget.RefreshLayout
+                android:id="@+id/swipe_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.game.wanq.uu.view.whget.MyListView
+                    android:id="@+id/phangListView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="@dimen/mW" />
+            </com.game.wanq.uu.view.whget.RefreshLayout>
+
+        </LinearLayout>
+    </com.game.wanq.uu.view.whget.MyScrollView>
+</LinearLayout>

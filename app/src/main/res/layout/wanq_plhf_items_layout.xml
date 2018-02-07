@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimaryBS"
+    android:orientation="vertical"
+    android:padding="@dimen/mTen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/hfitemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="小金鬼"
+            android:textColor="@color/colorPrimaryHS"
+            android:textSize="@dimen/hobanTextSize"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/hfitemzan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/hfitemzanimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mTen"
+                android:src="@mipmap/zan" />
+
+            <TextView
+                android:id="@+id/hfitemzantext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/mW"
+                android:text="0"
+                android:textSize="@dimen/hobanTextSize" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hfitemdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/mW"
+        android:text="1天前"
+        android:textSize="@dimen/hobanTextSize" />
+
+    <com.game.wanq.uu.view.whget.CollapsibleTextView
+        android:id="@+id/hfitemconten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/mTen"
+        android:paddingTop="@dimen/mTen"
+        android:textSize="@dimen/hobanTextSize" />
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBS"
+    android:fillViewport="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryloginTabHse"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/wanguo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/wanguoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="玩过"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/homeoneitemUserTextSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="35dp"
+            android:background="@color/colorPrimaryTXTHse" />
+
+        <LinearLayout
+            android:id="@+id/shouchang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/shouchangText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收藏"
+                android:textColor="@color/colorPrimaryTXTHse"
+                android:textSize="@dimen/homeoneitemUserTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.game.wanq.uu.view.whget.MyGridView
+        android:id="@+id/wanguoGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimarydHse"
+        android:numColumns="2" />
+
+    <com.game.wanq.uu.view.whget.MyGridView
+        android:id="@+id/shoucangGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimarydHse"
+        android:numColumns="2"
+        android:visibility="gone" />
+</LinearLayout>

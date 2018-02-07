@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimarydHse"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <AbsoluteLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/shouyefqibg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/m2Ten"
+                    android:text="游戏可用金额（元）"
+                    android:textColor="@color/colorPrimaryBS"
+                    android:textSize="@dimen/homeoneitemUserTextSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mTen"
+                    android:text="0.00"
+                    android:textColor="@color/colorPrimaryBS"
+                    android:textSize="@dimen/tabplTextSize"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mTen"
+                    android:background="@mipmap/tieannui" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_y="140dp"
+                android:background="@mipmap/shouyefqibgtiao"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/mW"
+                android:paddingTop="@dimen/mW">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textColor="@color/colorPrimaryHS"
+                        android:textSize="@dimen/homeoneitemTextSize"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/mW"
+                        android:text="下月应还"
+                        android:textColor="@color/colorPrimaryTXTHse" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textColor="@color/colorPrimaryHS"
+                        android:textSize="@dimen/homeoneitemTextSize"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/mW"
+                        android:text="可用余额"
+                        android:textColor="@color/colorPrimaryTXTHse" />
+                </LinearLayout>
+            </LinearLayout>
+        </AbsoluteLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/m2Ten"
+            android:text="切换"
+            android:textColor="@color/colorPrimaryBS"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBS"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bmenu_h"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/mTen">
+
+        <LinearLayout
+            android:id="@+id/tsufanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/fanhui" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/mTen"
+                android:text="投诉"
+                android:textColor="@color/colorPrimaryBS"
+                android:textSize="@dimen/homeoneitemTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryBS"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="@dimen/mTen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/youxi_icon"
+                app:civ_border_color="@color/colorPrimaryTM"
+                app:civ_border_width="2dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/mW"
+                android:text="不怕死的小仙子"
+                android:textColor="@color/colorPrimaryHS"
+                android:textSize="@dimen/hobanTextSize" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingTop="@dimen/mTen"
+            android:text="不怕死的小仙子"
+            android:textColor="@color/colorPrimaryTXTHse"
+            android:textSize="@dimen/hobanTextSize" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryTXTHse" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/mTen">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投诉说明"
+            android:textColor="@color/colorPrimaryTXTHse"
+            android:textSize="@dimen/hobanTextSize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m2Ten">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="辱骂、歧视、挑衅等不友善的内容"
+                    android:textColor="@color/colorPrimaryHS"
+                    android:textSize="@dimen/homeoneitemTextSize" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/tsdian" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m2Ten">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="广告或垃圾信息"
+                    android:textColor="@color/colorPrimaryHS"
+                    android:textSize="@dimen/homeoneitemTextSize" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/querener" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m2Ten">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="暴力、色情、政治敏感等违反法律法规的内容"
+                    android:textColor="@color/colorPrimaryHS"
+                    android:textSize="@dimen/homeoneitemTextSize" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/querener" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/mTen"
+            android:background="@color/colorPrimaryTXTHse" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/mTen"
+            android:paddingTop="@dimen/mTen"
+            android:text="投诉说明"
+            android:textColor="@color/colorPrimaryTXTHse"
+            android:textSize="@dimen/hobanTextSize" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/my_editetxt_tshu"
+            android:gravity="left"
+            android:hint="请输入补充说明（可不填）"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="@dimen/mW"
+            android:textColorHint="@color/colorPrimaryTXTHse"
+            android:textSize="@dimen/homeoneitemUserTextSize" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m2Ten"
+            android:background="@drawable/my_barnse"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/colorPrimaryBS"
+            android:textSize="@dimen/homeoneitemUserTextSize" />
+    </LinearLayout>
+
+
+</LinearLayout>

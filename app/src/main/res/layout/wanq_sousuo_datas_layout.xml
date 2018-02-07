@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bmenu_h"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/m2Ten"
+        android:paddingRight="@dimen/m2Ten">
+
+
+        <LinearLayout
+            android:id="@+id/aearchdata_fanhui"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/fanhui" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/mW">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/ss_spdatas"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="搜索游戏、用户、厂商"
+                        android:imeOptions="actionSearch"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimaryHse"
+                        android:textColorHint="@color/colorPrimaryHse"
+                        android:textSize="@dimen/homeoneitemUserTextSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/aearchdatalinyout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/shousuo" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.3px"
+                android:background="@color/colorPrimaryBS" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/suosoutad"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bmenu_h"
+        android:background="@color/colorPrimaryBS"
+        app:tabIndicatorColor="@color/colorPrimaryDark"
+        app:tabSelectedTextColor="@color/colorPrimaryDark"
+        app:tabTextColor="@color/colorPrimaryHS" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/suosoupager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

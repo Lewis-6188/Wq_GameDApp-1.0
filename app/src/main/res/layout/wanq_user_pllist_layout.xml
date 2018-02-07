@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimarydHse"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimarydHse"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mW"
+            android:background="@color/colorPrimaryBS"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/mW"
+            android:paddingLeft="@dimen/mTen"
+            android:paddingRight="@dimen/mTen"
+            android:paddingTop="@dimen/mW">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="评论了游戏"
+                android:textColor="@color/colorPrimaryTXTHse"
+                android:textSize="@dimen/hobanTextSize" />
+
+            <TextView
+                android:id="@+id/userpltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="2017年10月11日"
+                android:textColor="@color/colorPrimaryTXTHse"
+                android:textSize="@dimen/hobanTextSize" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorPrimaryBS"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/mW"
+            android:paddingLeft="@dimen/mTen"
+            android:paddingRight="@dimen/mTen"
+            android:paddingTop="@dimen/mW">
+
+            <ImageView
+                android:id="@+id/useryxIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/morentoux" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/mTen">
+
+                <TextView
+                    android:id="@+id/useryxname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/mW"
+                    android:text="不怕死的小仙子"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/homeoneitemUserTextSize" />
+
+                <com.game.wanq.uu.view.whget.RatingBarView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/useryxfenshu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:starCount="5"
+                    app:starDistance="2dp"
+                    app:starEmpty="@mipmap/star1"
+                    app:starFill="@mipmap/star2"
+                    app:starSize="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/userPlneir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryBS"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingBottom="@dimen/mW"
+            android:paddingLeft="@dimen/mTen"
+            android:paddingRight="@dimen/mTen" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryBS"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="@dimen/mW"
+            android:paddingLeft="@dimen/mTen"
+            android:paddingRight="@dimen/mTen">
+
+            <TextView
+                android:id="@+id/userPlzan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/zan"
+                android:paddingLeft="@dimen/m2Ten"
+                android:text="   0"
+                android:textColor="@color/colorPrimaryTXTHse"
+                android:textSize="@dimen/homeoneitemUserTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

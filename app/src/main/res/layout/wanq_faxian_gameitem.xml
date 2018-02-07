@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryBS"
+    android:gravity="center"
+    android:paddingBottom="@dimen/m2Ten"
+    android:paddingLeft="@dimen/mW"
+    android:paddingRight="@dimen/mW">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryBS"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/mTen">
+
+        <ImageView
+            android:id="@+id/faxangameimage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/csbitmap" />
+
+        <TextView
+            android:id="@+id/faxiangamename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/mW"
+            android:text="刀塔传奇"
+            android:textColor="@color/colorPrimaryHS"
+            android:textSize="@dimen/homeoneitemUserTextSize" />
+    </LinearLayout>
+</LinearLayout>

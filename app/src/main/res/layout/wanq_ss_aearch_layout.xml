@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bmenu_h"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/m2Ten"
+        android:paddingRight="@dimen/m2Ten">
+
+
+        <LinearLayout
+            android:id="@+id/aearch_fanhui"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/fanhui" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/mW">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/ss_sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="搜索游戏、用户、厂商"
+                        android:imeOptions="actionSearch"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimaryHse"
+                        android:textColorHint="@color/colorPrimaryHse"
+                        android:textSize="@dimen/homeoneitemUserTextSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sousuolinyout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/shousuo" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.3px"
+                android:background="@color/colorPrimaryBS" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_history_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_alpha_percent_45"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/mTen"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/search_history_lv"
+            style="@style/common_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/default_line_color"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@drawable/list_item_selector" />
+
+        <TextView
+            android:id="@+id/clear_history_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="清除历史搜索记录"
+            android:textColor="@color/colorPrimaryTXTHse"
+            android:textSize="@dimen/homeoneitemUserTextSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/mTen"
+        android:paddingRight="@dimen/mTen">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m2Ten"
+            android:text="热门游戏标签"
+            android:textColor="@color/colorPrimaryHS"
+            android:textSize="@dimen/homeoneitemTextSize" />
+
+        <com.game.wanq.uu.view.whget.BQFlowLayout
+            android:id="@+id/flowlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

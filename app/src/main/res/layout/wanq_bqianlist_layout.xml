@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/bmenu_hsihi"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bmenu_h"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/mTen"
+            android:paddingRight="@dimen/mTen">
+
+            <LinearLayout
+                android:id="@+id/biaoqfanhui"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/fanhui" />
+
+                <TextView
+                    android:id="@+id/biaoqtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/mTen"
+                    android:text="@string/app_name"
+                    android:textColor="@color/colorPrimaryBS"
+                    android:textSize="@dimen/homeoneitemTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/biaoqtousu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="@dimen/mTen"-->
+                <!--android:text="投诉"-->
+                <!--android:textColor="@color/colorPrimaryBS"-->
+                <!--android:textSize="@dimen/homeoneitemUserTextSize" />-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.game.wanq.uu.view.whget.MyListView
+            android:id="@+id/biaoqlist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="@dimen/mW" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="@dimen/bmenu_h"
+            android:padding="@dimen/mW" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mTen"
+            android:text="添加标签"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bqianTjia"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bmenu_hsihi"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/mTen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已添加"
+                android:textColor="@color/colorTXTHse" />
+
+            <com.game.wanq.uu.view.whget.bqHorizontalScrollView
+                android:id="@+id/bqianHorizontalView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mW"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/id_bqgallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal" />
+            </com.game.wanq.uu.view.whget.bqHorizontalScrollView>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/biaoqianbji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/bianji" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tijianbianqian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/mTen"
+        android:layout_marginRight="@dimen/mTen"
+        android:src="@mipmap/tjiabiaoq" />
+</RelativeLayout>

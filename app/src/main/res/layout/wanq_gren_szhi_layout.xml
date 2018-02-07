@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bmenu_h"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/mTen">
+
+        <LinearLayout
+            android:id="@+id/shezhifanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/titleLimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/fanhui" />
+
+            <TextView
+                android:id="@+id/titleContText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/mTen"
+                android:text="设置"
+                android:textColor="@color/colorPrimaryBS"
+                android:textSize="@dimen/homeoneitemTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/mTen"
+        android:text="基本设置"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/homeoneitemUserTextSize" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/mTen"
+        android:paddingRight="@dimen/mTen">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自动关注游戏板块"
+                android:textColor="@color/colorPrimaryHS"
+                android:textSize="@dimen/homeoneitemUserTextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mTen"
+                android:text="开启后，会根据玩过或预约的游戏自动关注对应模块"
+                android:textColor="@color/colorPrimaryTXTHse"
+                android:textSize="@dimen/hobanTextSize" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/kai" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/mTen"
+        android:paddingRight="@dimen/mTen"
+        android:paddingTop="@dimen/mTen">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="省流量模式"
+                android:textColor="@color/colorPrimaryHS"
+                android:textSize="@dimen/homeoneitemUserTextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mTen"
+                android:text="仅在WIFI下加载高质量图片，下载游戏"
+                android:textColor="@color/colorPrimaryTXTHse"
+                android:textSize="@dimen/hobanTextSize" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/kai" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/mTen"
+        android:paddingRight="@dimen/mTen"
+        android:paddingTop="@dimen/mTen">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自动删除安装包"
+                android:textColor="@color/colorPrimaryHS"
+                android:textSize="@dimen/homeoneitemUserTextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mTen"
+                android:text="下载安装成功后自动删除安装包"
+                android:textColor="@color/colorPrimaryTXTHse"
+                android:textSize="@dimen/hobanTextSize" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/guan" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/mTen"
+        android:paddingRight="@dimen/mTen"
+        android:paddingTop="@dimen/mTen">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="游戏更新设置"
+            android:textColor="@color/colorPrimaryHS"
+            android:textSize="@dimen/homeoneitemUserTextSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/mTen"
+            android:text="选择更新方式和是否开启更新推送"
+            android:textColor="@color/colorPrimaryTXTHse"
+            android:textSize="@dimen/hobanTextSize" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginTop="@dimen/mTen"
+        android:background="@color/colorPrimarydHse" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/mTen"
+        android:text="账号设置"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/homeoneitemUserTextSize" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/mTen"
+        android:paddingRight="@dimen/mTen"
+        android:paddingTop="@dimen/mTen">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前登录账号"
+            android:textColor="@color/colorPrimaryHS"
+            android:textSize="@dimen/homeoneitemUserTextSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/mTen"
+            android:text="瑞茜，ID:123433"
+            android:textColor="@color/colorPrimaryTXTHse"
+            android:textSize="@dimen/hobanTextSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/mTen"
+        android:paddingRight="@dimen/mTen"
+        android:paddingTop="@dimen/mTen">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改资料"
+            android:textColor="@color/colorPrimaryHS"
+            android:textSize="@dimen/homeoneitemUserTextSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/mTen"
+            android:text="修改用户昵称，简介等"
+            android:textColor="@color/colorPrimaryTXTHse"
+            android:textSize="@dimen/hobanTextSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/mTen"
+        android:paddingRight="@dimen/mTen"
+        android:paddingTop="@dimen/mTen">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码安全"
+            android:textColor="@color/colorPrimaryHS"
+            android:textSize="@dimen/homeoneitemUserTextSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/mTen"
+            android:text="设置初始密码"
+            android:textColor="@color/colorPrimaryTXTHse"
+            android:textSize="@dimen/hobanTextSize" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginTop="@dimen/mTen"
+        android:background="@color/colorPrimarydHse" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/mTen"
+        android:text="其它"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/homeoneitemUserTextSize" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/mTen"
+        android:paddingRight="@dimen/mTen"
+        android:paddingTop="@dimen/mTen">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检查更新"
+            android:textColor="@color/colorPrimaryHS"
+            android:textSize="@dimen/homeoneitemUserTextSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/mTen"
+            android:text="当前版本V1.0"
+            android:textColor="@color/colorPrimaryTXTHse"
+            android:textSize="@dimen/hobanTextSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/mTen"
+        android:paddingRight="@dimen/mTen"
+        android:paddingTop="@dimen/mTen">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清空缓存"
+            android:textColor="@color/colorPrimaryHS"
+            android:textSize="@dimen/homeoneitemUserTextSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/mTen"
+            android:text="包括图片，安装包缓存（共81.15M）"
+            android:textColor="@color/colorPrimaryTXTHse"
+            android:textSize="@dimen/hobanTextSize" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/mTen"
+        android:paddingRight="@dimen/mTen"
+        android:paddingTop="@dimen/mTen"
+        android:text="关于游戏分期"
+        android:textColor="@color/colorPrimaryHS"
+        android:textSize="@dimen/homeoneitemUserTextSize" />
+</LinearLayout>

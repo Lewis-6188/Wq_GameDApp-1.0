@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/mW"
+    android:paddingTop="@dimen/mW">
+
+    <LinearLayout
+        android:id="@+id/intemText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/mTen">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/fxckgdicon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@mipmap/youxi_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/mTen">
+
+                    <TextView
+                        android:id="@+id/fxckgdname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="测试游戏"
+                        android:textColor="@color/colorPrimaryHS"
+                        android:textSize="@dimen/homeoneitemTextSize"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/mW">
+
+                        <com.game.wanq.uu.view.whget.RatingBarView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/fxckgdbarview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:starCount="5"
+                            app:starDistance="2dp"
+                            app:starEmpty="@mipmap/star1"
+                            app:starFill="@mipmap/star2"
+                            app:starSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/fxckgdbartext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/mW"
+                            android:text="8.3"
+                            android:textSize="@dimen/homeoneitemUserTextSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left">
+
+                        <com.game.wanq.uu.view.whget.FxgdHorizontalScrollView
+                            android:id="@+id/fxckgdscrollview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:id="@+id/id_gallery"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal" />
+                        </com.game.wanq.uu.view.whget.FxgdHorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:gravity="center_vertical|bottom">
+
+        <RelativeLayout
+            android:id="@+id/xiazai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/mW">
+
+            <ImageView
+                android:id="@+id/fxckgdxiazai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/xiazai" />
+
+            <com.game.wanq.uu.view.whget.DownFView
+                android:id="@+id/fxckgdDownFView"
+                android:layout_width="@dimen/tabplTextSize"
+                android:layout_height="@dimen/tabplTextSize"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                tc:myrectWidth="4dp"
+                tc:radius="@dimen/mTen"
+                tc:ringColor="@color/colorPrimaryDark"
+                tc:strokeWidth="3dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

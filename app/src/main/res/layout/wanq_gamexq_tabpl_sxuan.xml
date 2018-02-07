@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/mW">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        android:orientation="vertical"
+        android:padding="@dimen/mW">
+
+        <LinearLayout
+            android:id="@+id/quanbupl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/mTen5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="全部评论"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/homeoneitemTextSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimarySHse" />
+
+        <LinearLayout
+            android:id="@+id/wxin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/mTen5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/star2"
+                android:gravity="center"
+                android:text="5 "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/homeoneitemTextSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimarySHse" />
+
+        <LinearLayout
+            android:id="@+id/sxin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/mTen5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/star2"
+                android:gravity="center"
+                android:text="4 "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/homeoneitemTextSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimarySHse" />
+
+        <LinearLayout
+            android:id="@+id/sanxin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/mTen5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/star2"
+                android:gravity="center"
+                android:text="3 "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/homeoneitemTextSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimarySHse" />
+
+        <LinearLayout
+            android:id="@+id/erxin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/mTen5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/star2"
+                android:gravity="center"
+                android:text="2 "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/homeoneitemTextSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimarySHse" />
+
+        <LinearLayout
+            android:id="@+id/yixin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/mTen5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/star2"
+                android:gravity="center"
+                android:text="1 "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/homeoneitemTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/quxiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mTen"
+        android:background="@drawable/dialog_background"
+        android:gravity="center"
+        android:padding="@dimen/mTen5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/homeoneitemTextSize" />
+    </LinearLayout>
+
+</LinearLayout>

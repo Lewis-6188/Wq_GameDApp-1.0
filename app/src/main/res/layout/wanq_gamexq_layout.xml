@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.game.wanq.uu.view.GameXqingActivity">
+
+    <com.game.wanq.uu.view.whget.MyScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lltopView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/xqbanner" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/mTen">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/yxicon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/youxi_icon" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/mTen">
+
+                            <TextView
+                                android:id="@+id/yxname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="测试游戏"
+                                android:textColor="@color/colorPrimaryHS"
+                                android:textSize="@dimen/homeoneitemTextSize"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/line1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingTop="@dimen/mW">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="厂商："
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="@dimen/homeoneitemUserTextSize" />
+
+                                <TextView
+                                    android:id="@+id/yxcs"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="上海萧峰网络科技有限公司"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="@dimen/homeoneitemUserTextSize" />
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/instalNmus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/mW"
+                                android:text="2342342点赞"
+                                android:textColor="@color/colorPrimaryTXTHse"
+                                android:textSize="@dimen/homeoneitemUserTextSize" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical|left">
+
+                                    <TextView
+                                        android:id="@+id/tuijian"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingTop="@dimen/mW"
+                                        android:text="编辑推荐"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/homeoneitemUserTextSize" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/shouchangyx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical|right"
+                                    android:paddingRight="@dimen/m2Ten">
+
+                                    <ImageView
+                                        android:id="@+id/shouchangyximage"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@mipmap/txin" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right"
+                            android:orientation="vertical"
+                            android:paddingRight="@dimen/mTen">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="top|right">
+
+                                <TextView
+                                    android:id="@+id/yxfens"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@mipmap/pingfen"
+                                    android:gravity="center"
+                                    android:paddingTop="@dimen/mTen"
+                                    android:text="9.6"
+                                    android:textColor="@color/colorPrimaryBS"
+                                    android:textSize="@dimen/homeoneitemTextSize" />
+                            </LinearLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/yxxiazai"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentRight="true"
+                                    android:src="@mipmap/xiazai" />
+
+                                <com.game.wanq.uu.view.whget.DownFView
+                                    android:id="@+id/yxxiazai_jd"
+                                    android:layout_width="@dimen/tabplTextSize"
+                                    android:layout_height="@dimen/tabplTextSize"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentRight="true"
+                                    android:visibility="gone"
+                                    tc:myrectWidth="4dp"
+                                    tc:radius="@dimen/mTen"
+                                    tc:ringColor="@color/colorPrimaryDark"
+                                    tc:strokeWidth="3dip" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimarySHse" />
+
+            <LinearLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bmenu_h"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tad"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryBS"
+                    app:tabIndicatorColor="@color/colorPrimaryDark"
+                    app:tabSelectedTextColor="@color/colorPrimaryDark"
+                    app:tabTextColor="@color/colorTXTHse" />
+
+                <RelativeLayout
+                    android:id="@+id/tabxiazaiLinayou"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="@color/colorPrimaryBS">
+
+                    <ImageView
+                        android:id="@+id/xiazaiTab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/xiazai" />
+
+                    <com.game.wanq.uu.view.whget.DownFView
+                        android:id="@+id/yxxiazai_jd2"
+                        android:layout_width="@dimen/tabplTextSize"
+                        android:layout_height="@dimen/tabplTextSize"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        tc:myrectWidth="4dp"
+                        tc:radius="@dimen/mTen"
+                        tc:ringColor="@color/colorPrimaryDark"
+                        tc:strokeWidth="3dip" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.game.wanq.uu.view.whget.CustomViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </com.game.wanq.uu.view.whget.MyScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/title_xq"
+            layout="@layout/wanq_title_xqbar" />
+
+        <LinearLayout
+            android:id="@+id/search01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</FrameLayout>
